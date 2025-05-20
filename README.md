@@ -36,7 +36,7 @@ Since some assertions in the FSDP source code might be too strict, we need to co
 #_check_nested_wrapping(root_module)
 ```
 
-And we have discuss the details with FSDP developer, and the accuracy is would not be affected by commenting out the assertions.
+We have discuss the details with FSDP developer, and the accuracy is would not be affected by commenting out the assertions.
 
 ### How to wrap Expert modules and non-Expert modules with separate process group?
 
