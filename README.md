@@ -7,7 +7,7 @@ For study purpose, we refined original DeepSeekV3 HuggingFace modeling (https://
 3. Grouped GEMM for Experts;
 4. Expert Parallelism;
 
-based on the details of DeepSeek-V3 Technical Report (https://arxiv.org/abs/2412.19437) and other open-sourced projects.
+based on the details of DeepSeek-V3 Technical Report (https://arxiv.org/abs/2412.19437) and open-sourced projects (some code snippet just adapted from https://github.com/InternLM/InternEvo).
 
 ## Convert HF checkpoint to DCP checkpoint
 
@@ -89,5 +89,9 @@ del state_dict
 torch.cuda.empty_cache()
 ```
 
-
 For more details, please refer to https://github.com/pytorch/pytorch/issues/149396
+
+## Developers
+
+[@zigzagcai](https://github.com/zigzagcai)
+[@rui23](https://github.com/rui23)
