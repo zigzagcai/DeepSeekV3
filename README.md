@@ -1,6 +1,6 @@
 # Efficient DeepSeekV3 HuggingFace Modeling
 
-For study purpose, we refined original DeepSeekV3 HuggingFace modeling (https://huggingface.co/deepseek-ai/DeepSeek-V3/blob/main/modeling_deepseek.py) to make it capable of training with `FSDP+EP` at scale, and might implement the missing part of the original modeling:
+For study purpose, we refined original DeepSeekV3 HuggingFace modeling (https://huggingface.co/deepseek-ai/DeepSeek-V3/blob/main/modeling_deepseek.py) to make it capable of training with `FSDP+EP` at scale (Minimum requirement of 256x A100/H100 GPUs is enough for full-size DeepSeek-V3 671B), and might implement the missing part of the original modeling:
 
 1. Multi Token Prediction; 
 2. Auxiliary Free Load Balancing; 
@@ -8,6 +8,8 @@ For study purpose, we refined original DeepSeekV3 HuggingFace modeling (https://
 4. Expert Parallelism;
 
 based on the details of DeepSeek-V3 Technical Report (https://arxiv.org/abs/2412.19437) and open-sourced projects (some code snippet just adapted from https://github.com/InternLM/InternEvo).
+
+Our implementation is particularly useful for fast prototyping or integration into RL systems (such as VeRL/OpenRLHF), and keeps good balance between usability and efficiency.
 
 ## Convert HF checkpoint to DCP checkpoint
 
