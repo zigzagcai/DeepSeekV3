@@ -9,7 +9,7 @@ For study purpose, we refined original DeepSeekV3 HuggingFace modeling (https://
 
 based on the details of DeepSeek-V3 Technical Report (https://arxiv.org/abs/2412.19437) and open-sourced projects (some code snippet just adapted from https://github.com/InternLM/InternEvo).
 
-Our implementation is particularly useful for fast prototyping or integration into RL systems (such as VeRL/OpenRLHF), and keeps good balance between usability and efficiency.
+Our implementation is particularly useful for fast prototyping or integration into SFT or RL systems (such as VeRL/OpenRLHF), and keeps good balance between usability and efficiency.
 
 ## Convert HF checkpoint to DCP checkpoint
 
