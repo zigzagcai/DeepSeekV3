@@ -11,6 +11,12 @@ based on the details of DeepSeek-V3 Technical Report (https://arxiv.org/abs/2412
 
 Our implementation is particularly useful for fast prototyping or integration into SFT or RL systems (such as VeRL/OpenRLHF), and keeps good balance between usability and efficiency.
 
+
+## Key Features
+* 🚀 **Efficient training** - Comparable training speeds to the original training method (DualPipe PP + EP + ZeRO1 DP) provided by [DeepSeek V3 tech report](https://arxiv.org/pdf/2412.19437)
+* 📖 **Readable codebase** - Clean implementation in ~ 1,700 lines of Python code
+
+
 ## Convert HF checkpoint to DCP checkpoint
 
 ``` bash
